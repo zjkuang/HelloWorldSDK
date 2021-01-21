@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-resources.sh
+${PODS_ROOT}/OpenWrapSDK/OpenWrapSDK/Resources/omsdk-v1.js
+${PODS_ROOT}/OpenWrapSDK/OpenWrapSDK/Resources/POBVideoResources.bundle
+${PODS_ROOT}/OpenWrapSDK/OpenWrapSDK/Resources/pmmraid.js
+${PODS_ROOT}/OpenWrapSDK/OpenWrapSDK/Resources/POBResources.bundle

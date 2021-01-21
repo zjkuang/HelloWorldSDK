@@ -14,4 +14,9 @@ Pod::Spec.new do |s|
   }
   s.source_files        = "HelloWorldSDK/**/*.{h,m,swift}"
   s.public_header_files = "HelloWorldSDK/**/*.h"
+  
+  s.static_framework = true # https://github.com/CocoaPods/CocoaPods/issues/6848#issuecomment-337238159
+  s.dependency 'Google-Mobile-Ads-SDK'
+  s.dependency 'OpenWrapSDK', '~> 1.7.1'
+  s.dependency 'OpenWrapEventHandler/DFP', '~> 1.2.2'
 end

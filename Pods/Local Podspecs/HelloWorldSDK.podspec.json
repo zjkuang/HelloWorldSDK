@@ -9,11 +9,24 @@
   "platforms": {
     "ios": "9.0"
   },
-  "swift_version": "4.2",
+  "swift_versions": "4.2",
   "source": {
     "git": "https://github.com/peteranny/HelloWorldSDK.git",
     "tag": "0.0.1"
   },
   "source_files": "HelloWorldSDK/**/*.{h,m,swift}",
-  "public_header_files": "HelloWorldSDK/**/*.h"
+  "public_header_files": "HelloWorldSDK/**/*.h",
+  "static_framework": true,
+  "dependencies": {
+    "Google-Mobile-Ads-SDK": [
+
+    ],
+    "OpenWrapSDK": [
+      "~> 1.7.1"
+    ],
+    "OpenWrapEventHandler/DFP": [
+      "~> 1.2.2"
+    ]
+  },
+  "swift_version": "4.2"
 }

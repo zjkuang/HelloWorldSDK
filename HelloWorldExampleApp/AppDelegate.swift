@@ -16,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        func initializeOpenWrap() {
+            OpenWrapSDK.setLogLevel(.all)
+            
+            // storeURL: https://appstoreconnect.apple.com -> App Infomation -> Additional Information / View on App Store
+            if let storeURL = URL(string: "https://apps.apple.com/us/app/gasbuddy/id123456789") {
+                let appInfo = POBApplicationInfo()
+                appInfo.storeURL = storeURL
+                OpenWrapSDK.setApplicationInfo(appInfo)
+            }
+        }
+        
         return true
     }
 

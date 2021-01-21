@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -49,6 +49,7 @@
 		BA8FFF0223152BAE00385715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA8FFF0823152DE700385715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC80F35ADCDD6CF058F097A6 /* Pods_HelloWorldExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HelloWorldExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F251139825B9F71700EFEFB7 /* HelloWorldExampleApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorldExampleApp-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +138,7 @@
 				BA8FFEFD23152BAE00385715 /* Assets.xcassets */,
 				BA8FFEFF23152BAE00385715 /* LaunchScreen.storyboard */,
 				BA8FFF0223152BAE00385715 /* Info.plist */,
+				F251139825B9F71700EFEFB7 /* HelloWorldExampleApp-Bridging-Header.h */,
 			);
 			path = HelloWorldExampleApp;
 			sourceTree = "<group>";
@@ -209,6 +211,7 @@
 				BA8FFEF123152BAC00385715 /* Frameworks */,
 				BA8FFEF223152BAC00385715 /* Resources */,
 				0512DB771C21F81358388D41 /* [CP] Embed Pods Frameworks */,
+				F75A234CE7ED7D2851C1B312 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,6 +241,7 @@
 					};
 					BA8FFEF323152BAC00385715 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1230;
 					};
 				};
 			};
@@ -296,20 +300,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HelloWorldSDK/HelloWorldSDK.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HelloWorldSDK.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		0BFD6D4B6E33E2D271F70AD9 /* [CP] Check Pods Manifest.lock */ = {
@@ -332,6 +331,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F75A234CE7ED7D2851C1B312 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -604,6 +620,7 @@
 			baseConfigurationReference = A3B4F26A144A2E4C650EE926 /* Pods-HelloWorldExampleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HelloWorldExampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -612,6 +629,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteranny.HelloWorldExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldExampleApp/HelloWorldExampleApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -622,6 +641,7 @@
 			baseConfigurationReference = 3AC118B7D23D2015CC43FE07 /* Pods-HelloWorldExampleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = HelloWorldExampleApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -630,6 +650,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.peteranny.HelloWorldExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HelloWorldExampleApp/HelloWorldExampleApp-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
