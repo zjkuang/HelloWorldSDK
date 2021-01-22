@@ -1,1 +1,0 @@
-../../../OpenWrapSDK/OpenWrapSDK/Headers/POBApplicationInfo.h

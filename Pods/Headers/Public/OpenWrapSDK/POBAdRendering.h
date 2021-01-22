@@ -1,1 +1,0 @@
-../../../OpenWrapSDK/OpenWrapSDK/Headers/POBAdRendering.h
