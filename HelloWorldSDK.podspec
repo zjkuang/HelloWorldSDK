@@ -17,6 +17,8 @@ Pod::Spec.new do |s|
   
   s.static_framework = true # https://github.com/CocoaPods/CocoaPods/issues/6848#issuecomment-337238159
   s.dependency 'Google-Mobile-Ads-SDK'
-  s.dependency 'OpenWrapSDK', '~> 1.7.1'
-  s.dependency 'OpenWrapEventHandler/DFP', '~> 1.2.2'
+  s.dependency 'OpenWrapSDK'
+  s.dependency 'OpenWrapEventHandler/DFP'
+  s.pod_target_xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/OpenWrapEventHandler/OpenWrapHandlers/OpenWrapHandlerDFP.framework/Headers' }
+
 end

@@ -3,5 +3,5 @@
 //
 
 // OpenWrap
+#import <DFPBannerEventHandler.h>
 #import <OpenWrapSDK.h>
-#import <POBBannerView.h>
