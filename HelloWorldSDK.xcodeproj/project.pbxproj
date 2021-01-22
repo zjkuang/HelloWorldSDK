@@ -207,11 +207,9 @@
 			buildConfigurationList = BA8FFF0523152BAE00385715 /* Build configuration list for PBXNativeTarget "HelloWorldExampleApp" */;
 			buildPhases = (
 				D09060F8E1C7B74DD401F40B /* [CP] Check Pods Manifest.lock */,
-				D033E056D9673BEC0C72EABC /* [CP] Prepare Artifacts */,
 				BA8FFEF023152BAC00385715 /* Sources */,
 				BA8FFEF123152BAC00385715 /* Frameworks */,
 				BA8FFEF223152BAC00385715 /* Resources */,
-				77ACEC3B5C592BC4CCA57C8E /* [CP] Embed Pods Frameworks */,
 				8F725299A453278CB5845F35 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -295,23 +293,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		77ACEC3B5C592BC4CCA57C8E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8F725299A453278CB5845F35 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,23 +308,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D033E056D9673BEC0C72EABC /* [CP] Prepare Artifacts */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-artifacts-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Prepare Artifacts";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-artifacts-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HelloWorldExampleApp/Pods-HelloWorldExampleApp-artifacts.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D09060F8E1C7B74DD401F40B /* [CP] Check Pods Manifest.lock */ = {
